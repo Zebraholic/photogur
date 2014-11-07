@@ -12,7 +12,10 @@
   <% end %>
 </ul>
 
-
+<h1>Pictures Older than One Month</h1>
+<% @older_pictures.each do |picture| %>
+	<p><%= link_to "#{picture.title}", "/pictures/#{picture.id}" %></p>
+<% end %>
 	</body>
 
 </html>
